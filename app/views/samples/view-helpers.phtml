@@ -1,0 +1,78 @@
+<?php
+/** @var \DateTime $date */
+/** @var string $name */
+/** @var array $tableData */
+?>
+
+<div class="container">
+
+    <h1><?php echo $this->translate('View helpers usage samples');?></h1>
+
+    <!-- SAMPLE: use dateDecorator helper to format dates -->
+    <h2><?php echo $this->translate('Date decorator');?></h2>
+
+    <ul class="list-group">
+        <li class="list-group-item">
+            <?php echo $this->dateDecorator->date($date);?>
+        </li>
+        <li class="list-group-item">
+            <?php echo $this->dateDecorator->dateTime($date);?>
+        </li>
+        <li class="list-group-item">
+            <?php echo $this->dateDecorator->time($date);?>
+        </li>
+        <li class="list-group-item">
+            <?php echo $this->dateDecorator->timeShort($date);?>
+        </li>
+        <li class="list-group-item">
+            <?php echo $this->dateDecorator->timestamp($date);?>
+        </li>
+    </ul>
+
+    <ul class="list-group">
+        <li class="list-group-item">
+            <?php echo $this->dateDecorator->date($date, 'en_GB');?>
+        </li>
+        <li class="list-group-item">
+            <?php echo $this->dateDecorator->dateTime($date, 'en_GB');?>
+        </li>
+        <li class="list-group-item">
+            <?php echo $this->dateDecorator->time($date, 'en_GB');?>
+        </li>
+        <li class="list-group-item">
+            <?php echo $this->dateDecorator->timeShort($date, 'en_GB');?>
+        </li>
+        <li class="list-group-item">
+            <?php echo $this->dateDecorator->timestamp($date, 'en_GB');?>
+        </li>
+    </ul>
+
+    <!-- SAMPLE: use escapeHtml helper -->
+    <h2><?php echo $this->translate('Escape HTML');?></h2>
+    <p>
+        <!-- SAMPLE: use translator helper with vars replacement -->
+        <?php echo $this->escapeHtml('<span>An HTML string!</span>');?>
+    </p>
+
+    <!-- SAMPLE: use partial helper -->
+    <h2><?php echo $this->translate('Partial');?></h2>
+    <?php echo $this->partial($this, APP_VIEWS_DIR . '/samples/partials/list.phtml',
+                              ['items' => ['A', 'B', 'C']]); ?>
+
+    <!-- SAMPLE: use translator helper with vars replacement -->
+    <h2><?php echo $this->translate('Translator');?></h2>
+    <p>
+
+        <?php echo $this->translate('Hello %s', $name);?>
+    </p>
+
+    <!-- SAMPLE: use a custom helper -->
+    <h2><?php echo $this->translate('A custom helper');?></h2>
+    <p>
+        <?php echo $this->translate('Check howto register a custom helper in <strong>/app/Application.php</strong>, method <strong>initViewHelpers()</strong>.');?>
+    </p>
+    <p>
+        <?php echo $this->sillyHelper('Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.');?>
+    </p>
+
+</div>

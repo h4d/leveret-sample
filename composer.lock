@@ -1,0 +1,376 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "e65e68e3fcecb883b1288b7e5511197b",
+    "content-hash": "d491df58874272fe27ab3a4c0c46c90e",
+    "packages": [
+        {
+            "name": "h4d/i18n",
+            "version": "v1.0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/h4d/i18n.git",
+                "reference": "18b8a2f1447d883781e5b268fc9473f41323d853"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/h4d/i18n/zipball/18b8a2f1447d883781e5b268fc9473f41323d853",
+                "reference": "18b8a2f1447d883781e5b268fc9473f41323d853",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "H4D\\I18n\\": "src",
+                    "H4D\\I18n\\Tests\\Unit\\": "tests"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Miguel Ángel Graña",
+                    "email": "edusalguero@gmail.com"
+                }
+            ],
+            "description": "H4D i18n",
+            "keywords": [
+                "H4D",
+                "i18n",
+                "translator"
+            ],
+            "time": "2016-11-21 16:03:02"
+        },
+        {
+            "name": "h4d/leveret",
+            "version": "dev-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/h4d/leveret.git",
+                "reference": "a29c912de07eb1317ce8c97d5917977002cc69f4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/h4d/leveret/zipball/a29c912de07eb1317ce8c97d5917977002cc69f4",
+                "reference": "a29c912de07eb1317ce8c97d5917977002cc69f4",
+                "shasum": ""
+            },
+            "require": {
+                "h4d/i18n": "^1.0.4",
+                "h4d/patterns": "^1.0.7",
+                "h4d/template": "^1.0",
+                "php": ">=5.5.9",
+                "psr/log": "~1.0",
+                "retrinko/ini": "^1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "H4D\\Leveret\\": "src",
+                    "H4D\\Leveret\\Tests\\Unit\\": "tests"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Miguel Ángel Graña",
+                    "email": "miguel.mailbox@gmail.com"
+                }
+            ],
+            "description": "PHP micro framework for web applications and APIs",
+            "keywords": [
+                "api",
+                "fast",
+                "framework",
+                "microframework"
+            ],
+            "time": "2016-11-21 18:04:13"
+        },
+        {
+            "name": "h4d/patterns",
+            "version": "v1.0.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/h4d/patterns.git",
+                "reference": "b846a41af49ea284c7208f766a53f57865cffc8e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/h4d/patterns/zipball/b846a41af49ea284c7208f766a53f57865cffc8e",
+                "reference": "b846a41af49ea284c7208f766a53f57865cffc8e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "H4D\\Patterns\\": "src",
+                    "H4D\\Patterns\\Tests\\Unit\\": "tests/unit"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Miguel Ángel Graña",
+                    "email": "miguel.mailbox@gmail.com"
+                }
+            ],
+            "description": "Common patters",
+            "keywords": [
+                "design",
+                "pattern",
+                "patterns"
+            ],
+            "time": "2016-11-19 10:12:50"
+        },
+        {
+            "name": "h4d/template",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/h4d/template.git",
+                "reference": "ce5b54635cfb60f26ec036ab89f48cef04503c0d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/h4d/template/zipball/ce5b54635cfb60f26ec036ab89f48cef04503c0d",
+                "reference": "ce5b54635cfb60f26ec036ab89f48cef04503c0d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "H4D\\Template\\": "src",
+                    "H4D\\Template\\Tests\\Unit\\": "tests"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Miguel Ángel Graña",
+                    "email": "miguel.mailbox@gmail.com"
+                }
+            ],
+            "description": "Basic PHP template system",
+            "keywords": [
+                "template"
+            ],
+            "time": "2016-11-19 08:25:51"
+        },
+        {
+            "name": "monolog/monolog",
+            "version": "1.21.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/monolog.git",
+                "reference": "f42fbdfd53e306bda545845e4dbfd3e72edb4952"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/f42fbdfd53e306bda545845e4dbfd3e72edb4952",
+                "reference": "f42fbdfd53e306bda545845e4dbfd3e72edb4952",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "psr/log": "~1.0"
+            },
+            "provide": {
+                "psr/log-implementation": "1.0.0"
+            },
+            "require-dev": {
+                "aws/aws-sdk-php": "^2.4.9",
+                "doctrine/couchdb": "~1.0@dev",
+                "graylog2/gelf-php": "~1.0",
+                "jakub-onderka/php-parallel-lint": "0.9",
+                "php-amqplib/php-amqplib": "~2.4",
+                "php-console/php-console": "^3.1.3",
+                "phpunit/phpunit": "~4.5",
+                "phpunit/phpunit-mock-objects": "2.3.0",
+                "ruflin/elastica": ">=0.90 <3.0",
+                "sentry/sentry": "^0.13",
+                "swiftmailer/swiftmailer": "~5.3"
+            },
+            "suggest": {
+                "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
+                "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
+                "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
+                "ext-mongo": "Allow sending log messages to a MongoDB server",
+                "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
+                "mongodb/mongodb": "Allow sending log messages to a MongoDB server via PHP Driver",
+                "php-amqplib/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib",
+                "php-console/php-console": "Allow sending log messages to Google Chrome",
+                "rollbar/rollbar": "Allow sending log messages to Rollbar",
+                "ruflin/elastica": "Allow sending log messages to an Elastic Search server",
+                "sentry/sentry": "Allow sending log messages to a Sentry server"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Monolog\\": "src/Monolog"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be"
+                }
+            ],
+            "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
+            "homepage": "http://github.com/Seldaek/monolog",
+            "keywords": [
+                "log",
+                "logging",
+                "psr-3"
+            ],
+            "time": "2016-07-29 03:23:52"
+        },
+        {
+            "name": "psr/log",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "time": "2016-10-10 12:19:37"
+        },
+        {
+            "name": "retrinko/ini",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/retrinko/ini.git",
+                "reference": "3c323527c045be5dfdd43840d1fe9d02cf9a5520"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/retrinko/ini/zipball/3c323527c045be5dfdd43840d1fe9d02cf9a5520",
+                "reference": "3c323527c045be5dfdd43840d1fe9d02cf9a5520",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Retrinko\\Ini\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Miguel Ángel Graña",
+                    "email": "miguel.mailbox@gmail.com"
+                }
+            ],
+            "description": "Library for parsing and writing INI files",
+            "keywords": [
+                "file",
+                "ini",
+                "parse",
+                "read",
+                "write"
+            ],
+            "time": "2016-07-08 08:06:26"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "h4d/leveret": 20
+    },
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

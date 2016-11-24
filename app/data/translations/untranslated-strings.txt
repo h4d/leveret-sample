@@ -1,0 +1,25 @@
+View helpers usage samples
+Date decorator
+Escape HTML
+Partial
+A
+B
+C
+Translator
+A custom helper
+Check howto register a custom helper in <strong>/app/Application.php</strong>, method <strong>initViewHelpers()</strong>.
+Hello, world!
+I'm a basic Leveret application.
+Check some samples here:
+orange
+apple
+lemon
+banana
+Fruit
+Color
+green/red
+yellow
+Vars sample
+This application route is registered as <strong>/samples/vars/:(string)name</strong>.
+The value of the route's section defined as <strong>:(string)name</strong> is converted into a var.
+Hello <mark>%s</mark>!

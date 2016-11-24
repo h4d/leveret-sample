@@ -1,0 +1,35 @@
+<?php
+/** @var $headers array */
+/** @var $data array */
+?>
+<?php if (isset($data) && count($data) > 0): ?>
+    <table class="table table-striped">
+        <thead>
+        <?php if (isset($headers) && count($headers) > 0): ?>
+        <?php endif;?>
+        <tr>
+            <?php foreach ($headers as $header): ?>
+                <th>
+                    <?php echo $this->translate($header); ?>
+                </th>
+            <?php endforeach; ?>
+        </tr>
+        </thead>
+        <tbody>
+
+        <?php foreach ($data as $row): ?>
+            <tr>
+            <?php foreach ($row as $item): ?>
+                <td>
+                    <?php echo $this->translate($item); ?>
+                </td>
+            <?php endforeach; ?>
+            </tr>
+        <?php endforeach; ?>
+
+        </tbody>
+
+    </table>
+<?php else: ?>
+    <p><?php echo $this->translate('No data!'); ?></p>
+<?php endif; ?>

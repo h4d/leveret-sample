@@ -1,0 +1,16 @@
+{
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "monolog/monolog": "^1.21.0",
+    "h4d/leveret": "dev-dev"
+  },
+  "repositories": [],
+  "autoload": {
+    "psr-4": {
+      "Application\\": "app",
+      "Application\\Controller\\": "app/controllers",
+      "Application\\Model\\": "app/models"
+    }
+  }
+}

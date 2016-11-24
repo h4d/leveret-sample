@@ -1,0 +1,8 @@
+<?php
+/** @var $exception \Exception */
+?>
+<div style="text-align: center">
+    <h3>Exception!</h3>
+    <strong><?php echo $exception->getMessage();?></strong>
+    <pre style="text-align: left; max-width: 50%; margin: auto; overflow: auto"><?php echo $exception->getTraceAsString();?></pre>
+</div>

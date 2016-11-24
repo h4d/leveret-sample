@@ -1,0 +1,14 @@
+<?php
+/** @var $items array */
+?>
+<?php if (isset($items) && count($items) > 0): ?>
+    <ul class="list-group">
+        <?php foreach ($items as $item): ?>
+            <li class="list-group-item">
+                <?php echo $this->translate($item); ?>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+<?php else: ?>
+    <p><?php echo $this->translate('Empty list!'); ?></p>
+<?php endif; ?>
