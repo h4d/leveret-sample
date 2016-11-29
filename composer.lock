@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e65e68e3fcecb883b1288b7e5511197b",
-    "content-hash": "d491df58874272fe27ab3a4c0c46c90e",
+    "hash": "42d650c5f9219f9e18c0423a403f878d",
+    "content-hash": "dee6cb38ee26bbfb8f310bd1ac2146a4",
     "packages": [
         {
             "name": "h4d/i18n",
@@ -54,16 +54,16 @@
         },
         {
             "name": "h4d/leveret",
-            "version": "dev-dev",
+            "version": "dev-feature/view-renderers",
             "source": {
                 "type": "git",
                 "url": "https://github.com/h4d/leveret.git",
-                "reference": "fab6dd9eb49cdd255b70b1c7329387f63039aa28"
+                "reference": "52316c7da2568fa47c49d27654475660c4416952"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/h4d/leveret/zipball/fab6dd9eb49cdd255b70b1c7329387f63039aa28",
-                "reference": "fab6dd9eb49cdd255b70b1c7329387f63039aa28",
+                "url": "https://api.github.com/repos/h4d/leveret/zipball/52316c7da2568fa47c49d27654475660c4416952",
+                "reference": "52316c7da2568fa47c49d27654475660c4416952",
                 "shasum": ""
             },
             "require": {
@@ -101,7 +101,7 @@
                 "framework",
                 "microframework"
             ],
-            "time": "2016-11-29 11:56:57"
+            "time": "2016-11-29 20:05:49"
         },
         {
             "name": "h4d/patterns",
@@ -361,6 +361,67 @@
                 "write"
             ],
             "time": "2016-07-08 08:06:26"
+        },
+        {
+            "name": "twig/twig",
+            "version": "v1.28.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twigphp/Twig.git",
+                "reference": "b22ce0eb070e41f7cba65d78fe216de29726459c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/b22ce0eb070e41f7cba65d78fe216de29726459c",
+                "reference": "b22ce0eb070e41f7cba65d78fe216de29726459c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.7"
+            },
+            "require-dev": {
+                "symfony/debug": "~2.7",
+                "symfony/phpunit-bridge": "~3.2@dev"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.28-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Twig_": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Armin Ronacher",
+                    "email": "armin.ronacher@active-4.com",
+                    "role": "Project Founder"
+                },
+                {
+                    "name": "Twig Team",
+                    "homepage": "http://twig.sensiolabs.org/contributors",
+                    "role": "Contributors"
+                }
+            ],
+            "description": "Twig, the flexible, fast, and secure template language for PHP",
+            "homepage": "http://twig.sensiolabs.org",
+            "keywords": [
+                "templating"
+            ],
+            "time": "2016-11-23 18:41:40"
         }
     ],
     "packages-dev": [],
