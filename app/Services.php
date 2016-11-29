@@ -2,6 +2,7 @@
 
 namespace Application;
 
+use Application\Models\Samples\ViewRenderers\TwigRenderer;
 use H4D\I18n\DateDecorator;
 use H4D\I18n\NullTranslator;
 use H4D\I18n\Translator;
@@ -53,6 +54,16 @@ class Services
 
             return $translator;
         }, true);
+
+        if ($app->getConfig()->get('views', 'useExternalRenderer', false))
+        {
+            // Register TwigRenderer as a service
+            $app->registerService($app::VIEW_RENDERER_SERVICE_NAME, function () use ($app)
+            {
+                return new TwigRenderer();
+            }, true);
+        }
+
     }
 
 }
