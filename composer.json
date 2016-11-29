@@ -3,7 +3,8 @@
   "prefer-stable": true,
   "require": {
     "monolog/monolog": "^1.21.0",
-    "h4d/leveret": "dev-dev"
+    "h4d/leveret": "dev-feature/view-renderers",
+    "twig/twig": "^1.0"
   },
   "repositories": [],
   "autoload": {
