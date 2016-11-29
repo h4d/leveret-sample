@@ -1,0 +1,18 @@
+{% extends 'twig/base.html' %}
+{% block title %}Twig sample{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>
+        Rendered by {{ name | capitalize }}!
+    </h1>
+
+
+    <ul>
+        {% for i in numbers %}
+        <li>Item <strong>{{ i }}</strong></li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% endblock %}
