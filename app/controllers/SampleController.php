@@ -25,7 +25,7 @@ class SampleController extends Controller
      */
     private function renderException($exception)
     {
-        $this->getView()->addVar('e', $exception);
+        $this->getView()->addVar('exception', $exception);
         $this->render('samples/exception.phtml');
     }
 
