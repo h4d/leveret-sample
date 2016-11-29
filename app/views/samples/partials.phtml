@@ -8,11 +8,11 @@
 
     <h1>Fruits list</h1>
 
-    <?php echo $this->partial($this, APP_VIEWS_DIR . '/samples/partials/list.phtml',
+    <?php echo $this->partial(APP_VIEWS_DIR . '/samples/partials/list.phtml',
                               ['items' => $fruits]); ?>
 
     <h1>Fruits table</h1>
-    <?php echo $this->partial($this, APP_VIEWS_DIR . '/samples/partials/table.phtml',
+    <?php echo $this->partial(APP_VIEWS_DIR . '/samples/partials/table.phtml',
                               ['headers' => $tableHeaders,
                                'data' => $tableData]); ?>
 

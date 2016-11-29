@@ -56,7 +56,7 @@
 
     <!-- SAMPLE: use partial helper -->
     <h2><?php echo $this->translate('Partial');?></h2>
-    <?php echo $this->partial($this, APP_VIEWS_DIR . '/samples/partials/list.phtml',
+    <?php echo $this->partial(APP_VIEWS_DIR . '/samples/partials/list.phtml',
                               ['items' => ['A', 'B', 'C']]); ?>
 
     <!-- SAMPLE: use translator helper with vars replacement -->

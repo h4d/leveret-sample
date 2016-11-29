@@ -58,12 +58,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/h4d/leveret.git",
-                "reference": "a29c912de07eb1317ce8c97d5917977002cc69f4"
+                "reference": "fab6dd9eb49cdd255b70b1c7329387f63039aa28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/h4d/leveret/zipball/a29c912de07eb1317ce8c97d5917977002cc69f4",
-                "reference": "a29c912de07eb1317ce8c97d5917977002cc69f4",
+                "url": "https://api.github.com/repos/h4d/leveret/zipball/fab6dd9eb49cdd255b70b1c7329387f63039aa28",
+                "reference": "fab6dd9eb49cdd255b70b1c7329387f63039aa28",
                 "shasum": ""
             },
             "require": {
@@ -101,7 +101,7 @@
                 "framework",
                 "microframework"
             ],
-            "time": "2016-11-21 18:04:13"
+            "time": "2016-11-29 11:56:57"
         },
         {
             "name": "h4d/patterns",
@@ -193,16 +193,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.21.0",
+            "version": "1.22.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "f42fbdfd53e306bda545845e4dbfd3e72edb4952"
+                "reference": "bad29cb8d18ab0315e6c477751418a82c850d558"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/f42fbdfd53e306bda545845e4dbfd3e72edb4952",
-                "reference": "f42fbdfd53e306bda545845e4dbfd3e72edb4952",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/bad29cb8d18ab0315e6c477751418a82c850d558",
+                "reference": "bad29cb8d18ab0315e6c477751418a82c850d558",
                 "shasum": ""
             },
             "require": {
@@ -213,7 +213,7 @@
                 "psr/log-implementation": "1.0.0"
             },
             "require-dev": {
-                "aws/aws-sdk-php": "^2.4.9",
+                "aws/aws-sdk-php": "^2.4.9 || ^3.0",
                 "doctrine/couchdb": "~1.0@dev",
                 "graylog2/gelf-php": "~1.0",
                 "jakub-onderka/php-parallel-lint": "0.9",
@@ -267,7 +267,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2016-07-29 03:23:52"
+            "time": "2016-11-26 00:15:39"
         },
         {
             "name": "psr/log",

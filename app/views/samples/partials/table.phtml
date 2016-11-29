@@ -4,17 +4,9 @@
 ?>
 <?php if (isset($data) && count($data) > 0): ?>
     <table class="table table-striped">
-        <thead>
-        <?php if (isset($headers) && count($headers) > 0): ?>
-        <?php endif;?>
-        <tr>
-            <?php foreach ($headers as $header): ?>
-                <th>
-                    <?php echo $this->translate($header); ?>
-                </th>
-            <?php endforeach; ?>
-        </tr>
-        </thead>
+        <!-- SAMPLE: Use a partial inside another partial -->
+        <?php echo $this->partial(APP_VIEWS_DIR . '/samples/partials/table-headers.phtml',
+                                  ['headers' => $headers]);?>
         <tbody>
 
         <?php foreach ($data as $row): ?>

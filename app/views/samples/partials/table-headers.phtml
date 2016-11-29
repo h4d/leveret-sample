@@ -1,0 +1,15 @@
+<?php
+/** @var $headers array */
+?>
+
+<?php if (isset($headers) && count($headers) > 0): ?>
+    <thead>
+    <tr>
+        <?php foreach ($headers as $header): ?>
+            <th>
+                <?php echo $this->translate($header); ?>
+            </th>
+        <?php endforeach; ?>
+    </tr>
+    </thead>
+<?php endif; ?>
