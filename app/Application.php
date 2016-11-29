@@ -3,6 +3,7 @@
 namespace Application;
 
 use Application\Controllers\SampleController;
+use Application\Controllers\TwigController;
 use Application\Models\Samples\ViewHelpers\SillyHelper;
 use H4D\Leveret\Http\Request;
 
@@ -40,10 +41,22 @@ class Application extends \H4D\Leveret\Application
      */
     protected function initRoutes()
     {
+        if ($this->getConfig()->get('views', 'useExternalRenderer', false))
+        {
+            $this->iniTwigSamples();
+        }
+        else
+        {
+            $this->initSamples();
+        }
+    }
+
+    protected function initSamples()
+    {
         // Index
         $this->registerRoute(Request::METHOD_GET, '/')
              ->useController(SampleController::class, 'indexAction')
-        ->setName('index');
+             ->setName('index');
 
         // Partials sample
         $this->registerRoute(Request::METHOD_GET, '/samples/partials')
@@ -58,9 +71,16 @@ class Application extends \H4D\Leveret\Application
         // Test route
         $this->registerRoute(Request::METHOD_GET, '/samples/vars/:name')
              ->useController(SampleController::class, 'varsAction')
-            ->setName('route vars sample');
+             ->setName('route vars sample');
     }
 
+    protected function iniTwigSamples()
+    {
+        // Index
+        $this->registerRoute(Request::METHOD_GET, '/')
+             ->useController(TwigController::class, 'indexAction')
+             ->setName('twig');
+    }
 
 
 }
